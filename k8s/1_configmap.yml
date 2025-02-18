@@ -18,7 +18,7 @@ data:
             strategy: refresh
             event: event
     user:
-      first-name: austin-changed
+      first-name: austin
       last-name: bieber
     logging:
       level:
