@@ -15,7 +15,7 @@ class Controller {
 
 	@GetMapping("/user")
 	public String getUser() {
-		System.out.println(user.getFirstName());
-		return user.getFirstName();
+		System.out.println(user.firstName());
+		return user.firstName();
 	}
 }

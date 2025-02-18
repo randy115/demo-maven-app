@@ -17,11 +17,9 @@ data:
             enabled: true
             strategy: refresh
             event: event
-
     user:
-      first-name: austin
+      first-name: austin-changed
       last-name: bieber
     logging:
       level:
         root: DEBUG
-
