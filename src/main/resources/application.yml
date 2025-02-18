@@ -1,0 +1,20 @@
+spring:
+  config:
+    location: "kubernetes:,/config/application.yml"
+
+management:
+  endpoints:
+      web:
+        exposure:
+          include: "*"
+  endpoint:
+    restart:
+      enabled: true
+    refresh:
+      enabled: true
+    env:
+      enabled: true
+
+user:
+  first-name: justin
+  last-name: bieber

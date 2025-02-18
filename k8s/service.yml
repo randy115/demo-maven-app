@@ -1,0 +1,16 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: demo-service
+  labels:
+    app: demo-app
+  annotations:
+    boot.spring.io/actuator: http://:8080/actuator
+spec:
+  selector:
+    app: demo-app
+  ports:
+    - name: http
+      port: 8080
+      targetPort: 8080
+  type: ClusterIP

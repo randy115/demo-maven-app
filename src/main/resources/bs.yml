@@ -1,0 +1,30 @@
+spring:
+  application:
+    name: demo-app 
+  config:
+    location: "/config/"
+  cloud:
+    kubernetes:
+      config:
+        enabled: true 
+        namespace: default
+        enable-api: true
+        name: demo-app-config
+      reload:
+        enabled: true
+        strategy: refresh
+        mode: event
+
+management:
+  endpoints:
+      web:
+        exposure:
+          include: "*"
+  endpoint:
+    restart:
+      enabled: true
+    refresh:
+      enabled: true
+    env:
+      enabled: true
+
