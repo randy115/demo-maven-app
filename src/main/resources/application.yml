@@ -14,7 +14,10 @@ management:
       enabled: true
     env:
       enabled: true
-
 user:
   first-name: justin
   last-name: bieber
+
+secrets:
+  username: lmao
+  password: what

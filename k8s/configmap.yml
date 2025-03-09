@@ -17,8 +17,13 @@ data:
             enabled: true
             strategy: refresh
             event: event
+          secrets:
+            paths: /etc/secrets/my-secret
+      config:
+        import: "configtree:/etc/secrets/my-secret/"
+
     user:
-      first-name: austin
+      first-name: rustin
       last-name: bieber
     logging:
       level:

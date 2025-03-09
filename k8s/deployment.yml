@@ -21,7 +21,12 @@ spec:
           volumeMounts:
             - name: config-volume
               mountPath: /config
+            - name: secret-volume
+              mountPath: /etc/secrets/my-secret
       volumes:
         - name: config-volume
           configMap:
             name: demo-app-config
+        - name: secret-volume
+          secret:
+            secretName: my-secret
